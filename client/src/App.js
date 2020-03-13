@@ -25,7 +25,7 @@ class App extends React.Component {
     return (
       <div className="App">
       <h1>Lambda School Advanced React Sprint</h1>
-      <div className="PlayerCard">
+      <div className="PlayerCard" id="players"> 
         {this.state.players.map(player => 
           <h2>Name: {player.name}<br/>
           Country: {player.country}<br/>
