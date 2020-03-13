@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import axios from 'axios';
+import Navbar from "./components/Navbar";
 
 class App extends React.Component {
   constructor() {
@@ -25,9 +26,10 @@ class App extends React.Component {
     return (
       <div className="App">
       <h1>Lambda School Advanced React Sprint</h1>
-      <div className="PlayerCard" id="players"> 
+      <Navbar />
+      <div className="PlayerCard"> 
         {this.state.players.map(player => 
-          <h2>Name: {player.name}<br/>
+          <h2 id="players">Name: {player.name}<br/>
           Country: {player.country}<br/>
           Searches: {player.searches}
           </h2>
