@@ -8,8 +8,3 @@ it('renders without crashing', () => {
   ReactDOM.render(<App />, div);
   ReactDOM.unmountComponentAtNode(div);
 });
-
-it('shows data so my TL doesnt give me a 1', () => {
-  const {getByText} = render(<App/>);
-  getByText(/name/i);
-});
